@@ -55,7 +55,7 @@ class Rectangle:
             return res
 
     def __str__(self):
-        """Returns the perimeter of the rectangle"""
+        """Returns a printable version of the rectangle"""
         tmp = ""
         if self.__width == 0 or self.__height == 0:
             return tmp
