@@ -24,7 +24,7 @@ class Rectangle:
     @width.setter
     def width(self, n):
         """Setter for the private attribute width"""
-        if n != int(n):
+        if type(n) is not int:
             raise TypeError("width must be an integer")
         elif n < 0:
             raise ValueError("width must be >= 0")
@@ -38,7 +38,7 @@ class Rectangle:
     @height.setter
     def height(self, n):
         """Setter for the private attribute height"""
-        if n != int(n):
+        if type(n) is not int:
             raise TypeError("height must be an integer")
         elif n < 0:
             raise ValueError("height must be >= 0")
@@ -96,4 +96,5 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
+        """Returns a new Rectangle instance with width == height == size"""
         return cls(size, size)
