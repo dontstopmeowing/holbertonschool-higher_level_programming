@@ -61,5 +61,7 @@ class Rectangle:
             return tmp
         else:
             for i in range(self.__height):
-                tmp += "{:s}\n".format(self.__width * "#")
+                tmp += "{:s}".format(self.__width * "#")
+                if i is not self.__height - 1:
+                    tmp += "\n"
         return tmp
