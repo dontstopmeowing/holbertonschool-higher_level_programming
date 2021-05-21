@@ -13,30 +13,30 @@ class Rectangle:
         self.height = height
         self.width = width
 
-        @property
-        def width(self):
-            """Returns the private attribute width"""
-            return self.__width
+    @property
+    def width(self):
+        """Returns the private attribute width"""
+        return self.__width
 
-        @width.setter
-        def width(self, n):
-            """Setter for the private attribute width"""
-            if n != int(n):
-                raise TypeError("width must be an integer")
-            elif n < 0:
-                raise ValueError("width must be >= 0")
-            self.__width = n
+    @width.setter
+    def width(self, n):
+        """Setter for the private attribute width"""
+        if n != int(n):
+            raise TypeError("width must be an integer")
+        elif n < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = n
 
-        @property
-        def height(self):
-            """Returns the private attribute height"""
-            return self.__height
+    @property
+    def height(self):
+        """Returns the private attribute height"""
+        return self.__height
 
-        @height.setter
-        def height(self, n):
-            """Setter for the private attribute height"""
-            if n != int(n):
-                raise TypeError("height must be an integer")
-            elif n < 0:
-                raise ValueError("height must be >= 0")
-            self.__width = n
+    @height.setter
+    def height(self, n):
+        """Setter for the private attribute height"""
+        if n != int(n):
+            raise TypeError("height must be an integer")
+        elif n < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = n
