@@ -1,0 +1,19 @@
+Import:
+	>>> print_square = __import__("4-print_square").print_square
+
+Checking too many args
+	 >>> print_square(100, 500)
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: print_square() takes 1 positional argument but 2 were given
+
+Checking NULL
+	 >>> print_square(NULL)
+	 Traceback (most recent call last):
+	 ...
+	 NameError: name 'NULL' is not defined
+
+Checking 10
+	 >>> print_square(2)
+	 ##
+	 ##
