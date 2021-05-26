@@ -1,0 +1,20 @@
+Import:
+	>>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+Checking NULL:
+	 >>> matrix_divided(NULL, 1)
+	 Traceback (most recent call last):
+         ...
+         NameError: name 'NULL' is not defined
+
+Checking div by zero:
+	 >>> matrix_divided(matrix, 0)
+	 Traceback (most recent call last):
+	 ...
+	 NameError: name 'matrix' is not defined
+
+Checking for non-number:
+     >>> matrix_divided([[10, 8], [4, 17]], "17")
+     Traceback (most recent call last):
+       ...
+     TypeError: div must be a number
