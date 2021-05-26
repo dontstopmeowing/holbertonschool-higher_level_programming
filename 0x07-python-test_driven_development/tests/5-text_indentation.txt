@@ -1,0 +1,33 @@
+The ``5-`text_indentation` module
+======================
+
+Using ``text_indentation``
+
+Import:
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Checking Trumps wall:
+	 >>> text_indentation("I will build a great, great wall on our southern border. and I will have Mexico pay for that wall. Mark my words.")
+	 I will build a great, great wall on our southern border.
+	 <BLANKLINE>
+	 and I will have Mexico pay for that wall.
+	 <BLANKLINE>
+	 Mark my words.
+
+Checking no arguments:
+	 >>> text_indentation()
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Checking for too many arguments:
+	 >>> text_indentation("I will be phenomenal to the women.", "I mean,", "I want to help women.")
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: text_indentation() takes 1 positional argument but 3 were given
+
+Checking NULL:
+	 >>> text_indentation(NULL)
+	 Traceback (most recent call last):
+	 ...
+	 NameError: name 'NULL' is not defined
