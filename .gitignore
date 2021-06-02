@@ -72,3 +72,7 @@
 0x0B-python-input_output/__pycache__/2-append_write.cpython-38.pyc
 0x0B-python-input_output/__pycache__/3-to_json_string.cpython-38.pyc
 0x0B-python-input_output/__pycache__/4-from_json_string.cpython-38.pyc
+0x0B-python-input_output/my_list.json
+0x0B-python-input_output/my_dict.json
+0x0B-python-input_output/my_set.json
+0x0B-python-input_output/__pycache__/5-save_to_json_file.cpython-38.pyc
