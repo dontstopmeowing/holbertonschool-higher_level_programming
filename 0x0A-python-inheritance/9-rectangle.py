@@ -28,5 +28,4 @@ class Rectangle(BaseGeometry):
         Returns the following rectangle description:
         [Rectangle] <width>/<height>
         """
-        return ('[Rectangle] ' + format(self.__width) + '/'
-                + format(self.__height) + '')
+        return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
