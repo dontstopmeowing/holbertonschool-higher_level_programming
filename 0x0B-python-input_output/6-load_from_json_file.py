@@ -11,4 +11,4 @@ def load_from_json_file(filename):
     """
 
     with open(filename, 'r', encoding='utf-8') as staroba:
-        json.load(staroba)
+        return json.load(staroba)
