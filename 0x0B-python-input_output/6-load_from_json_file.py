@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    This file contains the function write_file
+    This file contains the function load_from_json_file
 """
 import json
 
