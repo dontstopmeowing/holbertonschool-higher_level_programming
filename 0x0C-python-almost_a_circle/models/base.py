@@ -51,7 +51,21 @@ class Base:
         """
             Returns the list of the JSON string representation json_string.
         """
-        if not json_string or len(json_string) == 0:
+        if json_string is None or len(json_string) < 1:
             return "[]"
 
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+            Returns an instance with all attributes already set.
+        """
+        if cls.__name__ == "Rectangle":
+            new = cls(1, 1)
+        elif cls.__name__ == "Square":
+            new = cls(1)
+
+        new.update(**dictionary)
+
+        return new
