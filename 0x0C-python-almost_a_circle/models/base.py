@@ -80,7 +80,7 @@ class Base:
                 content = cls.from_json_string(file.read())
                 new = []
                 for i in content:
-                    new.append(cls.create(**content[i]))
-        except:
-            pass
-        return new
+                    new.append(cls.create(**i))
+                return new
+        except FileNotFoundError:
+            return []
