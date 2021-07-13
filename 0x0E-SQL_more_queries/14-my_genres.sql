@@ -11,4 +11,4 @@ WHERE
 GROUP BY
 	`tv_show_genres`.`genre_id` 
 ORDER BY
-	`genre` ASC;
+	`name` ASC;
