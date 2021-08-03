@@ -4,7 +4,7 @@ exports.esrever = function (list) {
   let i = 0;
   do {
     tmpList.unshift(list[i]);
-	i++;
+    i++;
   } while (i < list.length);
   return tmpList;
 };
