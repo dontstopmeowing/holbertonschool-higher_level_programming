@@ -16,7 +16,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     try:
-        result = session.query(State).filter_by(id = '2').first()
+        result = session.query(State).filter_by(id='2').first()
         result.name = 'New Mexico'
         session.commit()
     except Exception:
