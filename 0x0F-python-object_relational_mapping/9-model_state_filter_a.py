@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Script that prints the first State object from the database hbtn_0e_6_usa.
+Script that lists all State objects that
+contain the letter a from the database hbtn_0e_6_usa.
 """
 
 import sqlalchemy
@@ -18,7 +19,7 @@ if __name__ == "__main__":
     try:
         result = session.query(State).filter(State.name.like('%a%'))
         for row in result:
-        	print("{:d}: {:s}".format(row.id, row.name))
+            print("{:d}: {:s}".format(row.id, row.name))
     except Exception:
         print("Nothing")
     finally:
