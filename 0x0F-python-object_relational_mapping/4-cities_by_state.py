@@ -16,7 +16,7 @@ if __name__ == "__main__":
         "SELECT `cities`.`id`, `cities`.`name`, `states`.`name` FROM `cities` \
         INNER JOIN `states` ON `states`.`id` = `cities`.`state_id` \
         ORDER BY `cities`.`id`"
-        )
+    )
     results = cursor.fetchall()
     for row in results:
         print(row)
