@@ -1,4 +1,4 @@
-$.get('https://fourtonfish.com/hellosalut/?lang=pl', function (data) {
+$.get('https://fourtonfish.com/hellosalut/?lang=fr', function (data) {
   $('div#hello')
     .append(data.hello);
 }, 'json');
